@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_10"
+    android:orientation="vertical"
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/normal_10sp"
+       >
+       <TextView
+           android:id="@+id/tv_statue"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="@dimen/normal_10dp"
+           android:textColor="@color/color_333333"
+           android:textSize="@dimen/normal_24sp"
+           android:text="【状态：未发车】" />
+
+     <TextView
+         android:id="@+id/openlock"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/tv_statue"
+         android:textColor="@color/blue"
+         android:layout_marginLeft="@dimen/normal_60sp"
+         android:textSize="@dimen/normal_24sp"
+         android:text="开/关锁(20)"
+
+         />
+
+       <TextView
+           android:id="@+id/alarm"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/openlock"
+           android:textColor="@color/blue"
+           android:layout_alignParentRight="true"
+           android:layout_marginLeft="@dimen/normal_90sp"
+           android:textSize="@dimen/normal_24sp"
+           android:text="报警(20)"
+           />
+
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+       <TextView
+           android:layout_width="@dimen/normal_240dp"
+           android:layout_height="wrap_content"
+           android:gravity="right"
+           android:text="运输车辆"
+           />
+
+            <TextView
+                android:id="@+id/transfer_car"
+                android:layout_width="@dimen/normal_240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_30dp"
+                android:gravity="left"
+                android:text="657867567813"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="@dimen/normal_240dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="送货单号"
+                />
+
+            <TextView
+                android:id="@+id/transfer_bill"
+                android:layout_width="@dimen/normal_240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_30dp"
+                android:gravity="left"
+                android:text="876345646654"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="@dimen/normal_240dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="班线名称"
+                />
+
+            <TextView
+                android:id="@+id/class_line"
+                android:layout_width="@dimen/normal_240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_30dp"
+                android:gravity="left"
+                android:text="兴东-东莞"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="@dimen/normal_240dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="司机"
+                />
+
+            <TextView
+                android:id="@+id/driver"
+                android:layout_width="@dimen/normal_340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_30dp"
+                android:gravity="left"
+                android:text="刘兴【11423424234】"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="@dimen/normal_240dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="承运商"
+                />
+
+            <TextView
+                android:id="@+id/carrier"
+                android:layout_width="@dimen/normal_340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_30dp"
+                android:gravity="left"
+                android:text="顺丰"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="@dimen/normal_240dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="预计发车时间"
+                />
+
+            <TextView
+                android:id="@+id/send_time"
+                android:layout_width="@dimen/normal_340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_30dp"
+                android:gravity="left"
+                android:text="2020-10-21 12:45:23"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="@dimen/normal_240dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="预计发车时间"
+                />
+
+            <TextView
+                android:id="@+id/arriver_time"
+                android:layout_width="@dimen/normal_340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_30dp"
+                android:gravity="left"
+                android:text="2020-10-25 12:45:23"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="@dimen/normal_25sp"
+        >
+
+        <TextView
+            android:id="@+id/tv_openlock"
+            android:layout_width="@dimen/normal_138dp"
+            android:layout_height="@dimen/normal_42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_20dp"
+            android:background="#409EFF"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_22sp"
+           android:layout_alignParentRight="true"
+            android:text="@string/unlock_authorization" />
+
+        <TextView
+            android:id="@+id/tv_invalid_train"
+            android:layout_width="@dimen/normal_138dp"
+            android:layout_height="@dimen/normal_42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_20dp"
+            android:layout_toLeftOf="@+id/tv_openlock"
+            android:background="#F39C2A"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_22sp"
+            android:text="@string/invalid_train" />
+
+        <TextView
+            android:id="@+id/tv_modify_train"
+            android:layout_width="@dimen/normal_138dp"
+            android:layout_height="@dimen/normal_42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_20dp"
+            android:layout_toLeftOf="@+id/tv_invalid_train"
+            android:background="#F27C6B"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_22sp"
+            android:text="@string/modify_train_number" />
+    </RelativeLayout>
+    
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_20dp"
+        android:background="@color/color_F5F5F5" />
+</LinearLayout>

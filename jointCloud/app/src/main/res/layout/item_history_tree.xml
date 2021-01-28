@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <!--需要的viewModel,通过mBinding.vm=mViewMode注入-->
+        <variable
+            name="item"
+            type="com.joint.jointCloud.home.model.HistoryData" />
+
+        <variable
+            name="iscancheck"
+            type="boolean" />
+
+
+        <import type="android.view.View" />
+
+        <!-- <import type="com.dgfm.phoebuschinesechestnutmachine.utils.StringUtil" />-->
+    </data>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/normal_15dp"
+            >
+
+            <CheckBox
+                android:id="@+id/cb_check"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/normal_10dp"
+                android:button="@drawable/selector_quanxuan"
+                android:checked="@{item.isChoose}"
+                android:visibility="@{iscancheck?View.GONE:View.VISIBLE}"
+                />
+          <!--  android:text="@{item.carInfo.temperName}"-->
+
+            <ImageView
+                android:id="@+id/car"
+                android:layout_width="@dimen/normal_40sp"
+                android:layout_height="@dimen/normal_40sp"
+                android:layout_marginLeft="@dimen/normal_15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/search_che"
+
+               />
+            <TextView
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_5dp"
+                android:textSize="@dimen/normal_30sp"
+                android:text="@{item.carInfo.temperName}"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+</layout>

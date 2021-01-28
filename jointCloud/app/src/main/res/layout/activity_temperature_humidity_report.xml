@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_layout" />
+
+    <FrameLayout
+        android:id="@+id/layout_serarch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_80dp"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/et_value"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_50dp"
+            android:layout_marginStart="@dimen/normal_30dp"
+            android:layout_marginEnd="@dimen/normal_30dp"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_0dp"
+            android:background="@drawable/shape_white_transparent_bg_20"
+            android:drawableLeft="@mipmap/ic_search"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:hint="@string/please_enter_key_words"
+            android:paddingLeft="@dimen/normal_17dp"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:textSize="@dimen/normal_26sp"
+            android:visibility="visible"
+
+            />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginLeft="@dimen/normal_300dp"
+            android:padding="@dimen/normal_10dp"
+            android:src="@mipmap/ic_close"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/normal_30dp"
+            android:drawableLeft="@mipmap/alert_search_icon"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:text="@string/alarm_type"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_26sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center"
+        >
+
+
+        <ImageView
+            android:id="@+id/arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_arrow_left1"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2021-01-05"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_40dp"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_30dp"
+            >
+        </TextView>
+        <ImageView
+            android:id="@+id/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_arrow_right1"
+            ></ImageView>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+       android:orientation="vertical"
+        android:gravity="center_horizontal"
+
+        >
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_marginTop="@dimen/normal_50dp"
+            android:layout_width="@dimen/normal_650dp"
+            android:layout_height="@dimen/normal_450dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_60dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_90dp"
+            android:text="温度1"
+            android:theme="@style/MyCheckBox_greenyellow"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_20dp"
+
+            >
+
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_90dp"
+            android:text="温度2"
+            android:theme="@style/MyCheckBox_lightgreen"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_20dp"
+            >
+
+        </CheckBox>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_90dp"
+            android:text="温度3"
+            android:theme="@style/MyCheckBox_lightgreen"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_20dp"
+            >
+
+        </CheckBox>
+
+
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_90dp"
+        android:text="温度4"
+        android:theme="@style/MyCheckBox_lightgreen"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_20dp"
+        >
+
+    </CheckBox>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_30dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_90dp"
+            android:text="湿度1"
+            android:theme="@style/MyCheckBox"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_20dp"
+            >
+
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_90dp"
+            android:theme="@style/MyCheckBox_yellow"
+            android:text="湿度2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_20dp"
+            >
+
+        </CheckBox>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_90dp"
+            android:theme="@style/MyCheckBox"
+            android:text="湿度3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_20dp"
+            >
+
+        </CheckBox>
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_90dp"
+        android:theme="@style/MyCheckBox"
+        android:text="湿度4"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_20dp"
+        >
+    </CheckBox>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

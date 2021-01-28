@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/normal_61dp"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/normal_60dp"
+        android:paddingLeft="@dimen/normal_38dp"
+        android:paddingRight="@dimen/normal_38dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_28sp"
+            tools:text="司机姓名" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="@dimen/normal_24dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            tools:text="司机姓名" />
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/normal_20dp"
+            android:gravity="center_vertical"
+            android:text=">>"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_28sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_1dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/normal_20dp"
+        android:layout_marginRight="@dimen/normal_20dp"
+        android:background="@color/color_DDDDDD" />
+
+</FrameLayout>

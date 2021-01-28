@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lib-zxing</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="light_up">轻点照亮</string>
+    <string name="content">将二维码/条形码放入框内即可自动扫描二维码</string>
+
+</resources>

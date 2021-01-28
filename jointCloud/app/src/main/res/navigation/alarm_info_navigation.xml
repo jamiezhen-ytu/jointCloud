@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alarm_info_navigation"
+    app:startDestination="@id/alarmCommonFragment">
+    <fragment
+        android:id="@+id/alarmCommonFragment"
+        android:name="com.joint.jointCloud.car.fragment.AlarmCommonFragment"
+        android:label="alarm_common_fragment"
+        tools:layout="@layout/alarm_common_fragment">
+        <argument
+            android:name="isSingle"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_alarmCommonFragment_to_alarmActivitySecrityFragment"
+            app:destination="@id/alarmActivitySecrityFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/alarmActivitySecrityFragment"
+        android:name="com.joint.jointCloud.car.fragment.AlarmActivitySecrityFragment"
+        android:label="alarm_activitysecrity_fragment"
+        tools:layout="@layout/alarm_common_fragment">
+        <action
+            android:id="@+id/action_alarmActivitySecrityFragment_to_alarmCommonFragment"
+            app:destination="@id/alarmCommonFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+</navigation>

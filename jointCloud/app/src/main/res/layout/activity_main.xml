@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_80dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/img_account"
+            android:layout_width="@dimen/normal_42dp"
+            android:layout_height="@dimen/normal_50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_35dp"
+            android:src="@mipmap/ic_logout" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/table_one"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_34sp" />
+
+        <FrameLayout
+            android:id="@+id/message_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/normal_27dp">
+
+            <ImageView
+                android:id="@+id/img_message"
+                android:layout_width="@dimen/normal_42dp"
+                android:layout_height="@dimen/normal_50dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_margin="@dimen/normal_8dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/home_nav_remind_icon" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="@dimen/normal_30dp"
+                android:layout_height="@dimen/normal_30dp"
+                android:layout_gravity="right"
+                android:background="@drawable/shape_oval_dark_red"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/normal_12sp"
+                android:visibility="visible"
+                tools:text="999" />
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_serarch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_80dp"
+        android:background="@color/color_376DE2">
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_30dp"
+            android:background="@drawable/shape_white_transparent_bg_20"
+            android:drawableLeft="@mipmap/ic_search"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/normal_17dp"
+            android:hint="@string/please_enter_key_words"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:textSize="@dimen/normal_26sp" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_close"
+            android:padding="@dimen/normal_10dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/normal_50dp"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <cn.lilingke.commonlibrary.ui.widget.NoScrollViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_0dp"
+        android:layout_weight="1" />
+
+    <cn.lilingke.commonlibrary.ui.widget.alphatabs.AlphaTabsIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <cn.lilingke.commonlibrary.ui.widget.alphatabs.AlphaTabView
+            android:id="@+id/tab_one"
+            style="@style/MainTabStyle"
+            app:tabIconNormal="@mipmap/ic_tab_home_nor"
+            app:tabIconSelected="@mipmap/ic_tab_home"
+            app:tabText="@string/table_one" />
+
+        <cn.lilingke.commonlibrary.ui.widget.alphatabs.AlphaTabView
+            android:id="@+id/tab_two"
+            style="@style/MainTabStyle"
+            app:tabIconNormal="@mipmap/ic_tab_car_nor"
+            app:tabIconSelected="@mipmap/ic_tab_car"
+            app:tabText="@string/table_two" />
+
+        <cn.lilingke.commonlibrary.ui.widget.alphatabs.AlphaTabView
+            android:id="@+id/tab_three"
+            style="@style/MainTabStyle"
+            app:tabIconNormal="@mipmap/ic_tab_sacn_nor"
+            app:tabIconSelected="@mipmap/ic_tab_scan"
+            app:tabText="@string/table_three" />
+
+        <cn.lilingke.commonlibrary.ui.widget.alphatabs.AlphaTabView
+            android:id="@+id/tab_four"
+            style="@style/MainTabStyle"
+            app:tabIconNormal="@mipmap/ic_tab_monitor_nor"
+            app:tabIconSelected="@mipmap/ic_tab_monitor"
+            app:tabText="@string/table_four" />
+
+        <cn.lilingke.commonlibrary.ui.widget.alphatabs.AlphaTabView
+            android:id="@+id/tab_five"
+            style="@style/MainTabStyle"
+            app:tabIconNormal="@mipmap/ic_tab_playback_nor"
+            app:tabIconSelected="@mipmap/ic_tab_playback"
+            app:tabText="@string/table_five" />
+
+    </cn.lilingke.commonlibrary.ui.widget.alphatabs.AlphaTabsIndicator>
+    >
+
+
+</LinearLayout>

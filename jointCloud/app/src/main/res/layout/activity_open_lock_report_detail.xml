@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_layout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_88dp"
+        android:background="@color/color_376DE2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/normal_28dp"
+            android:layout_marginRight="@dimen/normal_12dp"
+            android:src="@mipmap/ic_arrow_left" />
+
+        <include layout="@layout/include_search_layout" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_choose_date"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_60dp"
+        android:layout_marginTop="@dimen/normal_10dp"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/normal_40dp"
+        android:paddingRight="@dimen/normal_40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_30dp">
+
+            <View
+                android:layout_width="@dimen/normal_15dp"
+                android:layout_height="@dimen/normal_15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_oval_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:drawablePadding="@dimen/normal_12dp"
+                android:gravity="center"
+                android:text="@string/unlock_time"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/normal_22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/normal_30dp">
+
+            <View
+                android:layout_width="@dimen/normal_15dp"
+                android:layout_height="@dimen/normal_15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_oval_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:drawablePadding="@dimen/normal_12dp"
+                android:gravity="center"
+                android:text="@string/lock_time"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/normal_22sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_100dp"
+        android:layout_marginTop="@dimen/normal_1dp"
+        android:background="@color/color_white">
+
+        <TextView
+            android:id="@+id/tv_remote"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/lock_remote_icon"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:gravity="center"
+            android:text="@string/remote_unlock"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_22sp" />
+
+        <View
+            android:layout_width="@dimen/normal_1dp"
+            android:layout_height="@dimen/normal_46dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_CCCCCC" />
+        <TextView
+            android:id="@+id/tv_ble"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/lock_blue_icon"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:gravity="center"
+            android:text="@string/bluetooth_unlock"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_22sp" />
+
+        <View
+            android:layout_width="@dimen/normal_1dp"
+            android:layout_height="@dimen/normal_46dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_CCCCCC" />
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/lock_card_icon"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:gravity="center"
+            android:text="@string/swipe_to_unlock"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_22sp" />
+
+        <View
+            android:layout_width="@dimen/normal_1dp"
+            android:layout_height="@dimen/normal_46dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_cut_lock"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/lock_cutting_icon"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:gravity="center"
+            android:text="@string/cut_unlock"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_22sp" />
+
+        <View
+            android:layout_width="@dimen/normal_1dp"
+            android:layout_height="@dimen/normal_46dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_CCCCCC" />
+
+
+
+        <TextView
+            android:id="@+id/tv_unknow"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/lock_unrecognized_icon"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:gravity="center"
+            android:text="@string/unrecognized_unlock"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_22sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

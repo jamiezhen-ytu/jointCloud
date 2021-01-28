@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/normal_10dp"
+    android:layout_marginRight="@dimen/normal_10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_56dp"
+        android:background="#f5f5f5"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_26sp"
+        tools:text="701"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_68dp"
+        android:layout_marginLeft="@dimen/normal_20dp"
+        android:layout_marginRight="@dimen/normal_20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="@dimen/normal_68dp"
+            android:layout_height="@dimen/normal_33dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_right_16"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_26sp"
+            tools:text="701"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_12dp"
+            android:layout_weight="1"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_28sp"
+            tools:text="部标机" />
+
+        <TextView
+            android:id="@+id/tv_statue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/normal_40dp"
+            android:drawableRight="@mipmap/ic_arrow_right"
+            android:drawablePadding="@dimen/normal_50dp"
+            android:gravity="center"
+            android:textColor="@color/color_E69D1E"
+            android:textSize="@dimen/normal_22sp"
+            tools:text="进行中" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_1dp"
+
+        android:background="@color/color_CCCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_20dp"
+        android:layout_marginRight="@dimen/normal_20dp"
+        android:background="@drawable/shape_white_10"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_144dp"
+            android:paddingLeft="@dimen/normal_24dp">
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="@dimen/normal_2dp"
+                android:layout_height="@dimen/normal_76dp"
+                android:layout_marginLeft="@dimen/normal_26dp"
+                android:background="@color/color_CCCCCC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_one"
+                android:layout_width="@dimen/normal_14dp"
+                android:layout_height="@dimen/normal_14dp"
+                android:background="@drawable/shape_oval_green"
+                app:layout_constraintBottom_toTopOf="@+id/view_line"
+                app:layout_constraintLeft_toLeftOf="@+id/view_line"
+                app:layout_constraintRight_toRightOf="@+id/view_line" />
+
+            <View
+                android:id="@+id/view_two"
+                android:layout_width="@dimen/normal_14dp"
+                android:layout_height="@dimen/normal_14dp"
+                android:background="@drawable/shape_oval_yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/view_line"
+                app:layout_constraintLeft_toLeftOf="@+id/view_line"
+                app:layout_constraintRight_toRightOf="@+id/view_line"
+                app:layout_constraintTop_toTopOf="@+id/view_line" />
+
+            <View
+                android:id="@+id/view_three"
+                android:layout_width="@dimen/normal_14dp"
+                android:layout_height="@dimen/normal_14dp"
+                android:background="@drawable/shape_oval_red"
+                app:layout_constraintLeft_toLeftOf="@+id/view_line"
+                app:layout_constraintRight_toRightOf="@+id/view_line"
+                app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_16dp"
+                android:textColor="@color/color_222222"
+                android:textSize="@dimen/normal_24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_one"
+                app:layout_constraintLeft_toRightOf="@+id/view_one"
+                app:layout_constraintTop_toTopOf="@+id/view_one"
+                tools:text="05:55:23" />
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_16dp"
+                android:textColor="@color/color_222222"
+                android:textSize="@dimen/normal_24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_two"
+                app:layout_constraintLeft_toRightOf="@+id/view_two"
+                app:layout_constraintTop_toTopOf="@+id/view_two"
+                tools:text="3小时" />
+
+            <TextView
+                android:id="@+id/tv_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_16dp"
+                android:textColor="@color/color_222222"
+                android:textSize="@dimen/normal_24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_three"
+                app:layout_constraintLeft_toRightOf="@+id/view_three"
+                app:layout_constraintTop_toTopOf="@+id/view_three"
+                tools:text="08:55:23" />
+
+            <View
+                android:id="@+id/view_four"
+                android:layout_width="@dimen/normal_2dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/normal_164dp"
+                android:background="@color/color_E6E6E6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="@dimen/normal_460dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_16dp"
+                android:maxLines="3"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/view_four"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="广东省深圳市南山区西丽街道西丽小学,第一教学楼三栋2层508室" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_10dp"
+        android:background="#f5f5f5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

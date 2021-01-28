@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_24dp"
+        android:layout_marginRight="@dimen/normal_24dp"
+        android:background="@drawable/shape_white_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_80dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/please_choose_the_deal_method"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/normal_24sp"
+            android:layout_marginTop="@dimen/normal_10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_F5F5F5" />
+
+        <TextView
+            android:id="@+id/frist_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_90dp"
+            android:gravity="center"
+            android:text="@string/suggsetion_haveread"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_F5F5F5" />
+
+        <TextView
+            android:id="@+id/middle_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_90dp"
+            android:gravity="center"
+            android:text="@string/suggestion_havedeal"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_F5F5F5" />
+
+        <TextView
+            android:id="@+id/last_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_90dp"
+            android:gravity="center"
+            android:text="@string/suggestion_haveconfirm"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_80dp"
+        android:layout_marginTop="@dimen/normal_20dp"
+        android:background="@drawable/shape_white_10"
+        android:layout_marginLeft="@dimen/normal_24dp"
+        android:layout_marginRight="@dimen/normal_24dp"
+        android:layout_marginBottom="@dimen/normal_20dp">
+
+        <TextView
+            android:id="@+id/bottom_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_60dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="@string/cancel"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/normal_30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

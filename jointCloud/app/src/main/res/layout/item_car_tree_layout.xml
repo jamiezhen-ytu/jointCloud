@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <!--需要的viewModel,通过mBinding.vm=mViewMode注入-->
+        <variable
+            name="item"
+            type="com.joint.jointCloud.home.model.CarNodeBean" />
+
+        <variable
+            name="iscancheck"
+            type="boolean" />
+
+        <variable
+            name="index"
+            type="int" />
+
+        <import type="android.view.View" />
+
+        <!-- <import type="com.dgfm.phoebuschinesechestnutmachine.utils.StringUtil" />-->
+    </data>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_10sp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/zhankai_cb"
+                android:layout_width="@dimen/normal_42dp"
+                android:layout_height="@dimen/normal_42dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/normal_10dp"
+                android:background="@drawable/selector_zhankai"
+                android:button="@null"
+                android:checked="@{item.isExpand}"
+                android:enabled="@{item.FNType!=2}"
+                android:visibility="@{item.FNType==2?View.INVISIBLE:View.VISIBLE}" />
+
+
+            <CheckBox
+                android:id="@+id/quanxuan_cb"
+                android:layout_width="@dimen/normal_48dp"
+                android:layout_height="@dimen/normal_48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/normal_10dp"
+                android:background="@drawable/selector_quanxuan"
+                android:button="@null"
+                android:checked="@{item.isChoose}"
+                android:enabled="@{item.FNType==2||!iscancheck}"
+                android:visibility="@{iscancheck?View.GONE:View.VISIBLE}"
+                />
+            <!--   -->
+            <ImageView
+                android:id="@+id/iamge"
+                android:layout_width="@dimen/normal_36dp"
+                android:layout_height="@dimen/normal_36dp"
+                android:layout_marginLeft="@dimen/normal_10sp"
+                android:src="@{item.FNType==0?@drawable/group:item.FNType==1?@drawable/company:@drawable/search_che}"
+                app:layout_constraintBottom_toBottomOf="@id/quanxuan_cb"
+                app:layout_constraintLeft_toRightOf="@id/quanxuan_cb"
+                app:layout_constraintTop_toTopOf="@id/quanxuan_cb"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_0dp"
+                android:text="@{item.FNType==2?item.getCarName():item.FName}"
+                android:textSize="@dimen/normal_30sp"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintBottom_toBottomOf="@id/quanxuan_cb"
+                app:layout_constraintLeft_toRightOf="@id/iamge"
+                app:layout_constraintTop_toTopOf="@id/quanxuan_cb" />
+        </LinearLayout>
+</layout>

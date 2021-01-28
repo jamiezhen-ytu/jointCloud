@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/normal_92dp">
+
+
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="@dimen/normal_0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/normal_10dp"
+        android:layout_marginBottom="@dimen/normal_6dp"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/ic_yyph"
+        android:drawablePadding="@dimen/normal_6dp"
+        android:gravity="center"
+        android:text="@string/cut_off_oil_and_electricity"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/normal_22sp" />
+
+    <View
+        android:layout_width="@dimen/normal_1dp"
+        android:layout_height="@dimen/normal_60dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/color_DDDDDD" />
+
+    <TextView
+        android:id="@+id/tv_two"
+        android:layout_width="@dimen/normal_0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/normal_10dp"
+        android:layout_marginBottom="@dimen/normal_6dp"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/ic_km"
+        android:drawablePadding="@dimen/normal_6dp"
+        android:gravity="center"
+        android:text="@string/open_and_close_the_door"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/normal_22sp" />
+
+
+    <View
+        android:layout_width="@dimen/normal_1dp"
+        android:layout_height="@dimen/normal_60dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/color_DDDDDD" />
+
+    <TextView
+        android:id="@+id/tv_three"
+        android:layout_width="@dimen/normal_0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/normal_10dp"
+        android:layout_marginBottom="@dimen/normal_6dp"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/ic_yhqx"
+        android:drawablePadding="@dimen/normal_6dp"
+        android:gravity="center"
+        android:text="@string/fuel_consumption_curve"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/normal_22sp" />
+
+
+</LinearLayout>

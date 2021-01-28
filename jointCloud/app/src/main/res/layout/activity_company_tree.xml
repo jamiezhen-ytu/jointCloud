@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+    <include layout="@layout/include_title_layout"/>
+
+    <FrameLayout
+        android:id="@+id/layout_serarch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_80dp"
+        android:background="@color/color_376DE2">
+
+        <EditText
+            android:id="@+id/et_value"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_30dp"
+            android:background="@drawable/shape_white_transparent_bg_20"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:hint="@string/please_enter_key_words"
+            android:paddingLeft="@dimen/normal_17dp"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:textSize="@dimen/normal_26sp" />
+    </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_100dp"
+        app:tabIndicatorColor="@color/charge_bt"
+        app:tabIndicatorHeight="@dimen/normal_2dp"
+        app:tabSelectedTextColor="@color/charge_bt"
+        app:tabTextColor="@color/black">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/company" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/histroy_record"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <fragment
+        android:id="@+id/my_company_tree_navigation"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:navGraph="@navigation/company_tree_navigation" />
+
+</LinearLayout>

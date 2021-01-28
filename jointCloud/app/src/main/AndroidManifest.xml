@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joint.jointCloud">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- //地图包、搜索包需要的基础权限 -->
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 应用使用蓝牙的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 扫描蓝牙设备或者操作蓝牙设置 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- //扫描权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- //震动 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".car.activity.CarTreeActivity"></activity>
+        <activity
+            android:name=".main.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 首页 -->
+        <activity
+            android:name=".main.activity.MainActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <!-- 地图预警 -->
+        <activity
+            android:name=".car.activity.AlarmMapActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 预警报表 -->
+        <activity
+            android:name=".car.activity.AlarmReportActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 报警信息 -->
+        <activity
+            android:name=".car.activity.AlarmInfoActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 报警类型 -->
+        <activity
+            android:name=".car.activity.AlarmTypeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--常规报警列表详情-->
+        <!--常规报警列表地图详情-->
+        <activity
+            android:name=".car.activity.AlarmDetailMapActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".car.activity.LockReportActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".car.activity.LockReportDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".car.activity.LockDetailMapActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 意见处理 -->
+        <activity
+            android:name=".car.activity.DealSuggestionActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 车厢详情 -->
+        <activity
+            android:name=".car.activity.CarDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 常规预警详情 -->
+        <activity
+            android:name=".car.activity.AlarmReportDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 单辆车预警详情 -->
+        <activity
+            android:name=".car.activity.AlarmOneCarActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 事件报告列表-->
+        <activity
+            android:name=".car.activity.EventReportActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+      <!-- 事件报告详情-->
+        <activity
+            android:name=".car.activity.EventReportDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 事件报告地图详情-->
+        <activity
+            android:name=".car.activity.EventDetailMapActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 事件报告列表-->
+        <activity
+            android:name=".car.activity.EventTypeActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <!-- 安全报告汇总 -->
+        <activity
+            android:name=".car.activity.SafetyReportActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 安全类型 -->
+        <activity
+            android:name=".car.activity.SafetyTypeActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 安全报告想起 -->
+        <activity
+            android:name=".car.activity.SafetyReportDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".car.activity.SafetyDetailMapActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 从机开关锁 -->
+        <activity
+            android:name=".home.activity.SwitchLockActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 从机开关锁 -->
+        <activity
+            android:name=".home.activity.SwitchLockMapActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 公司树 -->
+        <activity
+            android:name=".home.activity.CompanyTreeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 锁密码维护 -->
+        <activity
+            android:name=".home.activity.PwLockManagerActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 修改密码 -->
+        <activity
+            android:name=".home.activity.ModifyLockPwActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 子锁配置 -->
+        <activity
+            android:name=".home.activity.ChildLockActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 子锁配置 -->
+        <activity
+            android:name=".home.activity.OilActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 温湿度曲线 -->
+        <activity
+            android:name=".home.activity.TemperatureHumidityActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name=".car.activity.OpenLockAuthorizeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 子锁列表 -->
+        <activity
+            android:name=".home.activity.ChildLockListActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 蓝牙运维 -->
+        <activity
+            android:name=".home.activity.BleOperationActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 蓝牙运维 指令列表 -->
+        <activity
+            android:name=".home.activity.BleOrderListActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 蓝牙运维 发送指令 -->
+        <activity
+            android:name=".home.activity.SendBleOrderActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- OTA版本信息 -->
+        <activity android:name=".home.activity.OtaVersionInfoActivity" />
+        <!-- 通用报表页 -->
+        <!-- 温度传感器配置 -->
+        <activity
+            android:name=".home.activity.TemperatureSensorActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 停车报表详情 -->
+        <activity
+            android:name=".home.activity.ParkReportActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 停车报表详情 -->
+        <activity
+            android:name=".home.activity.ParkReportMapActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 行驶统计 -->
+        <activity
+            android:name=".home.activity.TravelReportDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 车次派发 -->
+        <activity
+            android:name=".home.activity.TrainNumDistributionActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--行驶地图-->
+        <activity
+            android:name=".home.activity.TravelReportMapActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!--行驶地图-->
+        <activity
+            android:name=".home.activity.DeviceRegisterActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 从机开关锁 -->
+        <activity
+            android:name=".home.activity.OpenLockReportActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 派车清单 -->
+        <activity
+            android:name=".home.activity.DispatchListActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 车辆树 -->
+        <activity
+            android:name=".car.activity.NewCarTreeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".car.activity.BindDevicesActivity"/>
+        <!-- 设备列表 -->
+        <activity
+            android:name=".car.activity.DevicesListActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".main.activity.ScanActivity" />
+        <!-- 声明service组件 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+       <!-- AK鉴权 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="xkvKxZfhhHlmzTmRbqSTuQ7xbbIgMLx6" />
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+      <!--  <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDyiBDxpJyZybN59tBPcJ9p7d80ZRLV3fM"/>-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDyiBDxpJyZybN59tBPcJ9p7d80ZRLV3fM" />
+        <!--
+        AIzaSyDyiBDxpJyZybN59tBPcJ9p7d80ZRLV3fM
+        公司：AIzaSyBXjhDsSjcNDkh7-Ubvasd_pvNjO54wdtE
+        AIzaSyDyiBDxpJyZybN59tBPcJ9p7d80ZRLV3fM
+      -->
+    </application>
+
+</manifest>

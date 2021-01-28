@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_10"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/normal_30dp">
+
+        <ImageView
+            android:id="@+id/img_show"
+            android:layout_width="@dimen/normal_154dp"
+            android:layout_height="@dimen/normal_154dp"
+            android:layout_marginLeft="@dimen/normal_20dp"
+            android:layout_marginTop="@dimen/normal_20dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_statue"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_24sp"
+            app:layout_constraintLeft_toRightOf="@+id/img_show"
+            app:layout_constraintTop_toTopOf="@+id/img_show"
+            tools:text="【状态：未发车】" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="@dimen/normal_135dp"
+            android:layout_height="@dimen/normal_42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/normal_20dp"
+            android:background="#C01010"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_22sp"
+            app:layout_constraintLeft_toLeftOf="@+id/img_show"
+            app:layout_constraintRight_toRightOf="@+id/img_show"
+            app:layout_constraintTop_toBottomOf="@+id/img_show"
+            tools:text="报警(2)" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:lineSpacingExtra="@dimen/normal_18dp"
+            android:text="@string/dispatch_car_info"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_24sp"
+            app:layout_constraintLeft_toRightOf="@+id/img_show"
+            app:layout_constraintTop_toBottomOf="@+id/tv_statue" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_38dp"
+            android:layout_marginTop="@dimen/normal_18dp"
+            android:lineSpacingExtra="@dimen/normal_18dp"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_24sp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_statue"
+            tools:text="74856321456\n10025478514\n兴东-大学城\n张三【17596321454】\n德邦物流\n2020-10-21 14:23:15\n2020-10-21 20:23:15" />
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="@dimen/normal_138dp"
+            android:layout_height="@dimen/normal_42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_20dp"
+            android:background="#409EFF"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_22sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="@string/modify_train_number" />
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="@dimen/normal_138dp"
+            android:layout_height="@dimen/normal_42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_30dp"
+            android:background="#F39C2A"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_22sp"
+            app:layout_constraintRight_toLeftOf="@+id/tv_one"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="@string/voided_trains" />
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="@dimen/normal_138dp"
+            android:layout_height="@dimen/normal_42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_30dp"
+            android:background="#F27C6B"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_22sp"
+            app:layout_constraintRight_toLeftOf="@+id/tv_two"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="@string/unlock_authorization" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_20dp"
+        android:background="@color/color_F5F5F5" />
+</LinearLayout>

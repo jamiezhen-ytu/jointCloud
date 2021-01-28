@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_5dp">
+
+        <ImageView
+            android:id="@+id/img_one"
+            android:layout_width="@dimen/normal_30dp"
+            android:layout_height="@dimen/normal_30dp"
+            android:layout_marginTop="@dimen/normal_2sp"
+            android:src="@mipmap/car"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0009[4313131231231]"
+            android:textColor="@color/black"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|center_vertical"
+        android:padding="@dimen/normal_5dp"
+        >
+        <ImageView
+            android:id="@+id/img_two"
+            android:layout_width="@dimen/normal_30dp"
+            android:layout_height="@dimen/normal_30dp"
+            android:src="@mipmap/map_lock_icon"
+            ></ImageView>
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="超时报警"
+            android:textColor="@color/black"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|center_vertical"
+        android:padding="@dimen/normal_5dp"
+        >
+        <ImageView
+            android:id="@+id/img_three"
+            android:layout_width="@dimen/normal_30dp"
+            android:layout_height="@dimen/normal_30dp"
+            android:layout_marginTop="@dimen/normal_2sp"
+            android:src="@mipmap/map_time_icon"
+            ></ImageView>
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020-11-10  14:20:12"
+            android:textColor="@color/black"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="@dimen/normal_5dp"
+        >
+        <ImageView
+            android:id="@+id/img_four"
+            android:layout_width="@dimen/normal_30dp"
+            android:layout_height="@dimen/normal_30dp"
+            android:layout_marginTop="@dimen/normal_8sp"
+            android:src="@mipmap/map_address_icon"
+            ></ImageView>
+        <TextView
+            android:id="@+id/tv_four"
+            android:layout_width="@dimen/normal_380sp"
+            android:layout_height="wrap_content"
+            android:maxLength="60"
+            android:ellipsize ="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:maxLines="3"
+            android:inputType ="textMultiLine"
+            android:text="广东省深圳市宝安区新安街道216号庭威产业园"
+            android:textColor="@color/black"
+            ></TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/icon_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:background="@mipmap/ic_l_end"/>
+
+
+
+
+
+
+</LinearLayout>

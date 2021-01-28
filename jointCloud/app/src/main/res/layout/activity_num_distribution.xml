@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/include_title_layout" />
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_30dp"
+        android:background="@color/color_white"
+        >
+
+        <TextView
+            android:id="@+id/device_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_60dp"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            android:layout_marginBottom="@dimen/normal_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="设备ID" />
+
+        <TextView
+            android:id="@+id/et_deviceid"
+            android:layout_width="@dimen/normal_450dp"
+            android:layout_height="@dimen/normal_55dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_60dp"
+            android:background="@drawable/shape_frame_2dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter"
+            android:paddingLeft="@dimen/normal_22dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/device_id"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+
+        >
+
+        <TextView
+            android:id="@+id/travel_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_60dp"
+            android:gravity="center_vertical"
+
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="运输车辆" />
+
+        <TextView
+            android:id="@+id/et_travel"
+            android:layout_width="@dimen/normal_450dp"
+            android:layout_height="@dimen/normal_55dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_60dp"
+            android:background="@drawable/shape_frame_2dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter"
+            android:paddingLeft="@dimen/normal_22dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintLeft_toRightOf="@+id/travel_car"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/travel_car"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+
+        >
+
+        <TextView
+            android:id="@+id/travel_line_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_60dp"
+            android:gravity="center_vertical"
+
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="班线名称" />
+
+        <EditText
+            android:id="@+id/et_travel_line_name"
+            android:layout_width="@dimen/normal_450dp"
+            android:layout_height="@dimen/normal_55dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_60dp"
+            android:background="@drawable/shape_frame_2dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter"
+            android:paddingLeft="@dimen/normal_22dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintLeft_toRightOf="@+id/travel_line_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/travel_line_name"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+
+        >
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_60dp"
+            android:gravity="center_vertical"
+
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="货物名称" />
+
+        <EditText
+            android:id="@+id/et_goods_name"
+            android:layout_width="@dimen/normal_450dp"
+            android:layout_height="@dimen/normal_55dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_60dp"
+            android:background="@drawable/shape_frame_2dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter"
+            android:paddingLeft="@dimen/normal_22dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintLeft_toRightOf="@+id/goods_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/goods_name"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+
+        >
+
+        <TextView
+            android:id="@+id/delivery_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_60dp"
+            android:gravity="center_vertical"
+
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="送货单号" />
+
+        <EditText
+            android:id="@+id/et_delivery_bill"
+            android:layout_width="@dimen/normal_450dp"
+            android:layout_height="@dimen/normal_55dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_60dp"
+            android:background="@drawable/shape_frame_2dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter"
+            android:paddingLeft="@dimen/normal_22dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintLeft_toRightOf="@+id/delivery_bill"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/delivery_bill"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+
+        >
+
+        <TextView
+            android:id="@+id/carrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_60dp"
+            android:gravity="center_vertical"
+
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="承运商" />
+
+        <EditText
+            android:id="@+id/et_carrier"
+            android:layout_width="@dimen/normal_450dp"
+            android:layout_height="@dimen/normal_55dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_60dp"
+            android:background="@drawable/shape_frame_2dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter"
+            android:paddingLeft="@dimen/normal_22dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintLeft_toRightOf="@+id/carrier"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/carrier"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        >
+
+        <TextView
+            android:id="@+id/driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_60dp"
+            android:gravity="center_vertical"
+
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="司机姓名" />
+
+        <EditText
+            android:id="@+id/et_driver"
+            android:layout_width="@dimen/normal_350dp"
+            android:layout_height="@dimen/normal_55dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_100dp"
+            android:background="@drawable/shape_frame_2dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter"
+            android:paddingLeft="@dimen/normal_22dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/search_driver"
+            app:layout_constraintLeft_toRightOf="@+id/driver"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/search_driver"
+            android:layout_width="@dimen/normal_50dp"
+            android:layout_height="@dimen/normal_50dp"
+            android:layout_marginRight="@dimen/normal_60dp"
+            android:background="@color/green"
+            android:src="@mipmap/ic_search"
+            android:gravity="left|center"
+            android:layout_marginTop="@dimen/normal_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/et_driver"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+
+        >
+
+        <TextView
+            android:id="@+id/driver_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_60dp"
+            android:gravity="center_vertical"
+
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="司机电话" />
+
+        <EditText
+            android:id="@+id/et_driver_tel"
+            android:layout_width="@dimen/normal_350dp"
+            android:layout_height="@dimen/normal_55dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_100dp"
+            android:background="@drawable/shape_frame_2dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter"
+            android:paddingLeft="@dimen/normal_22dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/search_driver_t"
+            app:layout_constraintLeft_toRightOf="@+id/driver_tel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/search_driver_t"
+            android:layout_width="@dimen/normal_50dp"
+            android:layout_height="@dimen/normal_50dp"
+            android:layout_marginRight="@dimen/normal_60dp"
+            android:background="@color/green"
+            android:gravity="left|center"
+            android:src="@mipmap/ic_search"
+            android:layout_marginTop="@dimen/normal_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/et_driver_tel"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+
+        >
+
+        <TextView
+            android:id="@+id/send_car_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_60dp"
+            android:gravity="center_vertical"
+
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="计划发车时间" />
+
+        <TextView
+            android:id="@+id/et_send_car_time"
+            android:layout_width="@dimen/normal_450dp"
+            android:layout_height="@dimen/normal_55dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_60dp"
+            android:background="@drawable/shape_frame_2dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter"
+            android:paddingLeft="@dimen/normal_22dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintLeft_toRightOf="@+id/send_car_time"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/send_car_time"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_arriver_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_60dp"
+            android:gravity="center_vertical"
+
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="预计到达时间" />
+
+        <TextView
+            android:id="@+id/et_arriver_time"
+            android:layout_width="@dimen/normal_450dp"
+            android:layout_height="@dimen/normal_55dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_60dp"
+            android:background="@drawable/shape_frame_2dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter"
+            android:paddingLeft="@dimen/normal_22dp"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/normal_26sp"
+            android:layout_marginTop="@dimen/normal_30dp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_arriver_time"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_arriver_time"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_60dp"
+        android:layout_marginLeft="@dimen/normal_30dp"
+        android:layout_marginRight="@dimen/normal_30dp"
+
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_56dp"
+
+            android:background="@drawable/button_oval_bg"
+            android:gravity="center"
+            android:text="派发"
+            android:textColor="@color/white"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_70dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/zhankai_cb"
+            android:layout_width="@dimen/normal_36dp"
+            android:layout_height="@dimen/normal_36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_10dp"
+            android:background="@drawable/selector_zhankai"
+            android:button="@null" />
+
+
+        <CheckBox
+            android:id="@+id/quanxuan_cb"
+            android:layout_width="@dimen/normal_36dp"
+            android:layout_height="@dimen/normal_36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_10dp"
+            android:background="@drawable/selector_quanxuan"
+            android:button="@null" />
+
+        <ImageView
+            android:id="@+id/iamge"
+            android:layout_width="@dimen/normal_36dp"
+            android:layout_height="@dimen/normal_36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_10dp" />
+
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/normal_30sp" />
+    </LinearLayout>
+</LinearLayout>

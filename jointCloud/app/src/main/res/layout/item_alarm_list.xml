@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:minHeight="@dimen/normal_86dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/normal_38dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/normal_26sp"
+        tools:text="司机姓名" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="@dimen/normal_38dp"
+        android:gravity="center_vertical|right"
+        android:textColor="@color/color_3B74F0"
+        android:textSize="@dimen/normal_26sp"
+        tools:text="10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/color_F5F5F5" />
+
+</FrameLayout>

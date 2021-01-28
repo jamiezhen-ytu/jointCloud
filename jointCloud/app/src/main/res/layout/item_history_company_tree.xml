@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <!--需要的viewModel,通过mBinding.vm=mViewMode注入-->
+        <variable
+            name="item"
+            type="com.joint.jointCloud.home.model.HistoryData" />
+
+        <variable
+            name="iscancheck"
+            type="boolean" />
+
+
+        <import type="android.view.View" />
+
+        <!-- <import type="com.dgfm.phoebuschinesechestnutmachine.utils.StringUtil" />-->
+    </data>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_70dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_check"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/normal_10dp"
+                android:text="@{item.carInfo.temperName}"
+                android:button="@drawable/selector_quanxuan"
+                android:checked="@{item.isChoose}"
+                android:visibility="@{iscancheck?View.GONE:View.VISIBLE}"
+                />
+
+
+            <TextView
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_15dp"
+                android:textSize="@dimen/normal_30sp"
+                android:drawableLeft="@drawable/company"
+                android:text="@{item.carInfo.AName}"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintBottom_toBottomOf="@id/quanxuan_cb"
+                app:layout_constraintLeft_toRightOf="@id/iamge"
+                app:layout_constraintTop_toTopOf="@id/quanxuan_cb"
+                android:visibility="@{iscancheck?View.VISIBLE:View.GONE}"
+                />
+        </LinearLayout>
+</layout>

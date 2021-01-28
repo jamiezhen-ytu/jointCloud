@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/color_F5F5F5"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_layout" />
+
+
+    <ImageView
+        android:layout_width="@dimen/normal_329dp"
+        android:layout_height="@dimen/normal_190dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/normal_132dp"
+        android:src="@mipmap/ic_bind_vehicle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_180dp"
+        android:layout_marginLeft="@dimen/normal_30dp"
+        android:layout_marginTop="@dimen/normal_140dp"
+        android:layout_marginRight="@dimen/normal_30dp"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_90dp"
+            android:paddingLeft="@dimen/normal_16dp"
+            android:paddingRight="@dimen/normal_16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/carriage_id"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/normal_28sp" />
+
+            <TextView
+                android:id="@+id/tv_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_28sp"
+                tools:text="75088998899" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_1dp"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_90dp"
+            android:paddingLeft="@dimen/normal_16dp"
+            android:paddingRight="@dimen/normal_16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/device_id"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/normal_28sp" />
+
+            <TextView
+                android:id="@+id/tv_devices"
+                android:layout_width="@dimen/normal_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_28sp"
+                android:hint="@string/please_select_equipment"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_70dp"
+        android:layout_marginLeft="@dimen/normal_90dp"
+        android:layout_marginTop="@dimen/normal_50dp"
+        android:layout_marginRight="@dimen/normal_90dp"
+        android:background="@drawable/shape_white_10"
+        android:gravity="center"
+        android:text="@string/bind_now"
+        android:textColor="@color/color_3B74F0"
+        android:textSize="@dimen/normal_30sp" />
+
+
+    <TextView
+        android:id="@+id/tv_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_70dp"
+        android:layout_marginLeft="@dimen/normal_90dp"
+        android:layout_marginTop="@dimen/normal_30dp"
+        android:layout_marginRight="@dimen/normal_90dp"
+        android:background="@drawable/shape_white_10"
+        android:gravity="center"
+        android:text="@string/unbind"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/normal_30sp" />
+</LinearLayout>

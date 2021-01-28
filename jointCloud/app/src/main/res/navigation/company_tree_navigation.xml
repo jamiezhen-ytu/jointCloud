@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/company_tree_navigation"
+    app:startDestination="@id/companyTreeFragment">
+    <fragment
+        android:id="@+id/companyTreeFragment"
+        android:name="com.joint.jointCloud.home.fragment.CompanyTreeFragment"
+        android:label="company_tree_fragment"
+        tools:layout="@layout/car_tree_fragment">
+        <argument
+            android:name="isSingle"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_companyTreeFragment_to_historyRecodComFragment"
+            app:destination="@id/historyRecodComFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyRecodComFragment"
+        android:name="com.joint.jointCloud.home.fragment.HistoryRecodComFragment"
+        android:label="history_recod_fragment"
+        tools:layout="@layout/history_recod_fragment">
+        <action
+            android:id="@+id/action_historyRecodComFragment_to_companyTreeFragment"
+            app:destination="@id/companyTreeFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_layout" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_50dp"
+        android:orientation="horizontal"
+        android:background="@color/bg_color"
+        >
+
+        <LinearLayout
+            android:id="@+id/ly_start"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/normal_0dp"
+                android:drawablePadding="@dimen/normal_6dp"
+                android:text="@string/start_time"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/normal_24sp"
+                android:drawableLeft="@drawable/text_circle_green"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_duration"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/normal_0dp"
+                android:drawablePadding="@dimen/normal_6dp"
+                android:text="@string/duration_time"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/normal_24sp"
+                android:drawableLeft="@drawable/text_circle_yellow"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ly_end"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/normal_0dp"
+                android:drawablePadding="@dimen/normal_6dp"
+                android:text="@string/end_time"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/normal_24sp"
+                android:drawableLeft="@drawable/text_circle_red"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_100dp"
+        app:tabIndicatorColor="@color/charge_bt"
+        app:tabIndicatorHeight="@dimen/normal_2dp"
+        app:tabSelectedTextColor="@color/charge_bt"
+        app:tabTextColor="@color/black">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/alarm_common" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/alarm_activity_secrity"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <fragment
+        android:id="@+id/my_alarm_navigation"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:navGraph="@navigation/alarm_info_navigation" />
+
+
+</LinearLayout>

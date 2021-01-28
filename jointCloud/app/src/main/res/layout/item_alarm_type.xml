@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <CheckBox
+        android:id="@+id/ck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/selector_quanxuan"
+        />
+
+    <ImageView
+        android:id="@+id/img_name"
+        android:layout_width="@dimen/normal_30dp"
+        android:layout_height="@dimen/negative_20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/normal_8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/normal_26sp"
+        android:src="@drawable/event_icon4"
+        tools:text="司机姓名" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_8dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="@dimen/normal_38dp"
+        android:gravity="center_vertical|right"
+        android:textColor="@color/color_3B74F0"
+        android:textSize="@dimen/normal_26sp"
+        tools:text="超速行驶" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_1dp"
+        android:background="@color/color_F5F5F5" />
+
+</LinearLayout>

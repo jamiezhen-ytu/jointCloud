@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical">
+    <include layout="@layout/include_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@+id/edit_deal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_250dp"
+            android:layout_margin="@dimen/normal_15dp"
+            android:enabled="true"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="8"
+            android:scrollbars="vertical"
+            android:background="@drawable/edittext_bg_normal"
+             android:text=""
+            android:textSize="@dimen/normal_30sp"
+            />
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/normal_60dp"
+    android:gravity="center_horizontal"
+    >
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="@dimen/normal_580sp"
+        android:layout_height="@dimen/normal_60dp"
+        android:background="@drawable/button_oval_bg"
+        android:layout_gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_30dp"
+        ></Button>
+
+</LinearLayout>
+
+
+</LinearLayout>

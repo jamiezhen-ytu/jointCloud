@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_0dp"
+        android:layout_weight="1">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+
+        <include layout="@layout/include_choose_date" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_120dp"
+        android:layout_gravity="bottom"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="@dimen/normal_48dp"
+            android:layout_height="@dimen/normal_48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_20dp"
+            android:src="@mipmap/ic_play_n" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/normal_24dp"
+            android:max="200"
+            android:maxHeight="@dimen/normal_5dp"
+            android:progressDrawable="@drawable/shape_seek_bar_bg"
+            android:thumb="@drawable/shape_seek_bar_thumb" />
+    </LinearLayout>
+
+</LinearLayout>

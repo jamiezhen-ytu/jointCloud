@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_100dp"
+        android:background="@color/color_3B74F0">
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/magicindicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_100dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/normal_20dp" />
+    </FrameLayout>
+
+   <!-- <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone"
+        />
+-->
+<!--    <fragment
+        android:id="@+id/mapView_google"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>-->
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapView_google"
+        />
+    <cn.lilingke.commonlibrary.ui.widget.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/normal_0dp"
+        android:adjustViewBounds="true" />
+</LinearLayout>

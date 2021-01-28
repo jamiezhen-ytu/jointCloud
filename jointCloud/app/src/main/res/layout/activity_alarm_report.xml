@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_layout"/>
+
+
+    <FrameLayout
+        android:id="@+id/layout_serarch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_80dp"
+        android:background="@color/color_376DE2">
+
+
+        <TextView
+            android:id="@+id/et_value"
+            android:layout_width="@dimen/normal_500dp"
+            android:layout_height="@dimen/normal_50dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/normal_30dp"
+            android:layout_marginRight="@dimen/normal_0dp"
+            android:background="@drawable/shape_white_transparent_bg_20"
+            android:drawableLeft="@mipmap/ic_search"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter_key_words"
+            android:paddingLeft="@dimen/normal_17dp"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_white"
+            android:textSize="@dimen/normal_26sp"
+            android:visibility="visible"
+            />
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_close"
+            android:padding="@dimen/normal_10dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/normal_220dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/normal_30dp"
+            android:drawablePadding="@dimen/normal_12dp"
+            android:text="@string/alarm_type"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/normal_26sp"
+            android:drawableLeft="@mipmap/alert_search_icon"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_110dp">
+
+        <LinearLayout
+            android:id="@+id/ly_start"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/normal_18dp"
+                android:drawablePadding="@dimen/normal_6dp"
+                android:text="@string/start_date"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/normal_24sp"
+                android:drawableLeft="@mipmap/track_begin_icon"/>
+
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/normal_10dp"
+                android:drawablePadding="@dimen/normal_6dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_28sp"
+                tools:text="2020-08-09" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_end"
+            android:layout_width="@dimen/normal_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/normal_18dp"
+                android:drawablePadding="@dimen/normal_6dp"
+                android:text="@string/end_date"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/normal_24sp"
+                android:drawableLeft="@mipmap/track_finish_icon"/>
+
+
+            <TextView
+                android:id="@+id/tv_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/normal_10dp"
+                android:drawablePadding="@dimen/normal_6dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/normal_28sp"
+                tools:text="2020-08-09" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_60dp"
+        android:background="@color/color_DDDDDD">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_40dp"
+            android:text="@string/sort_by_number_of_alarms"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/normal_22sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/normal_40dp"
+            android:text="@string/unit_time"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/normal_22sp" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
